@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: grey;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+/* Clases */
+
+.Contenedor_Principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.Ejercicio1,
+.Ejercicio2 {
+  font-size: 3em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  border: 3px solid black;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 15px;
+  background-color: white;
+  color: black;
+  box-shadow: 10px 10px 10px black;
+  transition: 0.5s ease;
+}
+
+.Ejercicio1:hover {
+  font-size: 3.3em;
+}
+.Ejercicio2:hover {
+  font-size: 3.3em;
+}

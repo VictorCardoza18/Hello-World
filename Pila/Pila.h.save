@@ -1,0 +1,28 @@
+typedef struct Nodo {
+	Elem dato;
+	struct Nodo *sig;
+}*Pila;
+
+Pila empty(){
+    return NULL;
+}
+
+Pila push(Elem e, Pila p){
+	Pila temp=(Pila)malloc(sizeof(struct Nodo));
+	temp->dato = e;
+	temp->sig = p;
+	return temp;
+}
+
+int isempty(Pila p){
+    return p == NULL;
+}
+
+Elem top(Pila p){
+    return p->dato;
+}
+
+Pila pop(Pila p){
+    return p->sig;
+}
+ void imp
